@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GalaxyBots — Licences pour bots Discord</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAMp0lEQVR4AexXC3hV1ZX+9z7nnntvbh43CQmJDQRFpMqAjDwqlsHQWkY/OhrAO1gRBottIRbQaniMUK81Sht5ByIl1lcb4CNgI53CB81M8SvCqE0NpBAgIQ/Iy5Dk3pv7PM89+4SkJpDEwKDf1+/rvnudvfbaa63zn33X3mtvir+z8g/AX/Yf9qXPcEF+wTiXy5Vwsz7kywRM3tn1q6kLnpr/6215eWtmzpwZfzNA3yhgkoGFtsVYNSITS0c+hHmxQIZ4FSB29kTVuZrK2rOX6upPNDc3B64av6EuvV6rh/H9mF8k7l46L2HOX8Y67rswLfrBqllpP6p9J31tySrkZbngTuE+CSesy1t3ecsrWxY/OvfR35WWlqqm7P9L1wXYhazo7zhm7UwOpm1yRBLujGdJNJWlQWiU4oeE0+4fGz1h+33Wicdeitn91BS47Ca413e97qmtrY2Y/M2g6wI8DlN/lEzT51o0ByWCBDAKi6yHEq1xTZGAFjAMK5ITvzZyqJS6Y4702J5leHkUbnIZNOCFcNvSo0Y+T1ULESFB14H2cNu+Gu3slLLwsckfhY5Prg7V/LDd3/oRkQluEVMeHivdc+AZvPrNm4l50ICjIf4TY2yorukQRAGaqntrcWFFNh4/5cYP6nPxg4oX8WhBuf/Db7UHmhbITGlzJiR/Pd0xZn82tj94s0APGjCBZTSlhGh8agmhMAytow3+a1b+TrhDq/FYYX340qTq5ovH7GJc8q0J43bliAf2vYi9H+fSg+fX4/CnG1Cybx09kPUkcobxjxk0jkErErAEgzFIkgW6pkE3WNIojJq9DFsez0Lug0uw7ja+Q/DA5q/ndS0W1JxH+SN+TS4MeuTYeDFpTryYOilsqKMigjZesSpzBIdl+4TkSSdXiwWvuPDsoJLLoAEzQOM4wAzOcYbPtt0G647bMLpwDCYcnETu++gh6zd3r0FehgsugavgV3C3/ylYlqVa5Hfjop26jUqw8J9BNBjQwVT+9CM+TRq+cnrizH3zseZW024gGjRgCtp6rSMu5QAIRALGhog6nZ1Ghx/4F/v31nXP9gGs9FcpHyxv9FXvjSgBJkkEEg8pUaagEQKrYgVRLCTi1aaPcUwomIlVA2ZEei2IviUatHrKtzEYBGZLiAAKETYaBZOTEYFP88Fuj4mOS4yfPiYp/S50lTeR6z+jfpLFouSPqYVCpBSAoSkI5zXoF1f6tY42KoqIsQ6ZPpHevYQPdiYe3l5T6dWSESNGON1u9+1Xy1WwWkGnikUXITIrGEQYHKrH8CDU9ROixQulwdJZe+rfm+q+/GRZTx9vw+2tDFW4pBhLnSzLEOzayTMoX/MyFuSexqnvyFa5XVUVmhg75IeL4U7qaduTvwbwpk2blmRlZT3dU8nkd+KFZkNhbQTE7PKcQcwo5LNMEYYfRqz2yanAXx7Yiuz3DyFP7lS66pGP5y6VN5ctFqOtEdEhjE+zJGVyFfIufvppS6BpU0D3I6QG0xUYY7i8z/o3wGlpafbd7+7+RmZm5iKn07kwPz///nHjxjl6WDEeFoc5QRUU6FTjoDXoYgRhKdDwccdHC3fAXdtDv0/2HA6UtMtN+RpVhWhrdM5jWJFqKvqMjg+8WpvmNdoRQGCaKeuLOgGbYMvLy1fMfWLuAV3TR1osFueSJUveP1l6MidjRKaz27ADnj8qVOYzq4MQCkIILmufsXalJb8IG8506w3UHsVRrU49v6FDDVTIsjFsrP2en5j6DLonZATkAOuAjEiyKeuLqCmsr68P33vvvRt37dr1CM9iNYqi+NevX585cfRE99HaYh/X6dSrwMljjhRLUNdVWJgFkmDne4RNaUHLbq4z6LoHuU1NnsatjFDDBgePv213dCB4PqLJB3VJhyHpof6cdQIxB8+dO+d/4okn/rekpOTNUCj0TnZ29tHS6lITLFkqvrrqLriia9HY0BJq/bMumFsyX3JUBIHUWoT1XxgK6F1YDby7rY6Y02pYtw9D6otFcCsKtDw5IvsVRT7VW/3zHv2cvcJt375924YNG7Ze6YGngKWzDY29OBHDRpmLqcnb8JZBdaZx0NQq8d3CVs11GafrqiX4ha/V01pgdVgNHmCZi7Fx8m/wn39SFaVQRfh4f86uAVxcXOzNycmpNA3SMMVuE2OyqDVGsiD2++DFg8+OyFKw2iAyLCKDCCGOi2+oNqFmjyfS3sqoHhUvJC938enxw7vah6qL/Tmk/Q2Y8kmYOlnA0PtaZIV3nY/Ox/OOzXi2uSlQU6QZXqhhL6IEYp4hornCddcirLvcRlv/EJYUKIL8oIH0McXY7C1F/7eTAQHfJo2930JjrCJskBCVwuC8GwCrM86+aYsVG0VokIhhHwrnt7j8hqpXbfvAJ3fAEPUEniTncydXNnrO9FUHAkx9ime8HRLs/Gcltg4ZWudieBuvXbjQXFUYCoUhWUQh1Z76TAYW2vp6wRfJ2uH50CAGNH4CFHRx5u14aAh6l14fQHuPfd6bgfn2ofbkVBsV+PxSnv8t54rgDuBKMSpRs0VyCBflcADRzDbtATyw2sVj8MrwgE/y3ZRFk9OQ1nnnO4S8Cmoh/NgqQQ9pXx8lDL+329rlWphSWla2sLtvttR89EU2WCjTNMnKN644mw2CTut76hVhU0N18PxrIuUxwayCAKwejinrFsGd0FOvJz8FLvt/WFYudmpxe6MwLL1rjAXlgF9jBqKtscSuO+YBGeIb6/bevvqFVTnj77771b3798/lulZO/ChgPvugKvhlyWppF5gGgTsD2N8yXrf6aRwtUI3Qh5SPC6CWBCRlp2H44WVY/9S3seCOu5CRMg4zkqdi9m0LsPKR6Y6M/TbVvs1JnHEUPOd0OYpyRFHwoxRRKRLJkIn/hjucYY/uTEsdFhsKqUL6iOFJt9xyC58T9A/4DIpUWY5UgvAkQRR+bjDGL8IbvWbvEA7JTbj4NNfxWSDASZ38aZ2YQFML7qHTjn9byDz28NdmHZvgmHw8Acn7taD+kAQrZRG0xCO2wcR7F1ySP+R3yPwEJxIRUYgdIcKWsjT3e392r1r7XG1l5cvfmDBpW2NjYwi8UE79VdagXvofnagGZeBfxuLtAsmdgmftPQ024aenQ0R+XzVPGNTgQwQSlRDLnIkxesJIpcEYFas7hzot8QLlu7ZVdMDrDx4+gcPt4GU4kibHRseBXxf5tYvbMyZECfYpfAj5b21sGDt+zA6T7ybazfTVfoqK/5ZFrTzWEQ+bIMKmkycnW8YcWYTXHp+LZ+6cjxcmPoctrzRG2lwByGjWLiNCIggavEcDEHhisYs2UM3C74ECz4oSFA2fhUE2o6skS0NnKEEZhsqgER2qXcdlvW1s1zD/AqhdfGczIOBy7PK0etteCvjCoXhHDKL535kiJEy91TascLTtn8+k0GGfgEirVMLsYVGFImhQqAKZZ0GZKPxNnAhDyFDRwYLwwBdqR+vT7+HnZjrHaDwcI0CYRw0KgPIoBrdV4IiOMkPPFHJ579qnsKfKm1hTzHSWE/H6I0liHGz8HiZwQoTyxSiBUgsYFWAQQGcMmmF0kqprnUADog6PEEILmvz1qH36N/jZ/i7/5A6Mfp7q0gizb9qbbRcJXe01zRcC5hbsr/htrgeXlzLRuCRycDbRCofNCnuUFRrrjF5ofBZ1M445aXxnMUmFhghkPreBci/a5h1E3jvcn1nJDCx/IE50LiPgoY3PC6UU/kDAyyVmOPCmd6W9u333ilCk/xw/fqMqUpURiZLdqiSXyfDIiuEDBBWSXeBkAV/kMIGawDUzDTDleDDsW96kVs84hPzfAWCcyCwsmZYiJBYIGnUKfF8hlIAQAspbVVW4EitDP4X2I+9TvBk/qc4OuH72x9CB+ysipyZcCFe46vWq59QE30tKvDenQatcW4eK5bWomFWPs+Pr2MkZhVibdxRvN3c5pHPw43lxZMjeaNGW7uBpydzDu8Y6G103+BFA/kNnp4/HdQHusmeHUNixG9tP70HeviJj68bNF7PdWy6tWLvP2JJzEDu3HsLO4v/CLyuP4NfBLhvcg1l3zrav+G2UPeVtiLZkhYcNRKMz9rt1+BJguqG/dQxqXbfs6vZGAF/tY1B9AyzcYfjrdJva5DMCmlfzIsxC0M0LrRCBJgQVWQoUXzTOvQQegv05/coAl6G4tkR+fdlfPScmNOt1j/uFji0+5vt92PAfaVebf1mnnv33yvDv5x3jW2l/YE35VwbYfJlJp3Ck5QR2FR1WdzzzXmTDdwu1V/51HzYuLsFb75/AibCpMxB95YAHAjOYsb87wP8HAAD//yVBQosAAAAGSURBVAMAtt5UpAYAnbMAAAAASUVORK5CYII=">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0a0713;
+    --bg-elevated:#120c22;
+    --surface:#191029;
+    --surface-2:#20142f;
+    --border:#2c1f45;
+    --border-soft:#231733;
+    --accent:#8b5cf6;
+    --accent-bright:#a78bfa;
+    --accent-2:#c026d3;
+    --accent-soft:#c4b5fd;
+    --text:#f3f0ff;
+    --text-muted:#9d8fc2;
+    --text-dim:#6f6291;
+    --success:#34d399;
+    --danger:#f87171;
+    --radius:14px;
+    --font-display:'Space Grotesk', sans-serif;
+    --font-body:'Inter', sans-serif;
+    --font-mono:'JetBrains Mono', monospace;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:var(--font-body);
+    line-height:1.5;
+    min-height:100vh;
+    position:relative;
+    overflow-x:hidden;
+  }
+  a{color:inherit; text-decoration:none;}
+  button{font-family:inherit; cursor:pointer;}
+  ::selection{background:var(--accent); color:#fff;}
+  :focus-visible{outline:2px solid var(--accent-bright); outline-offset:2px;}
+
+  /* starfield */
+  #starfield{position:fixed; inset:0; z-index:0; pointer-events:none;}
+  .bg-glow{position:fixed; inset:0; z-index:0; pointer-events:none;
+    background:
+      radial-gradient(ellipse 900px 500px at 15% -5%, rgba(139,92,246,0.20), transparent 60%),
+      radial-gradient(ellipse 700px 500px at 100% 10%, rgba(192,38,212,0.14), transparent 60%);
+  }
+
+  .wrap{position:relative; z-index:1;}
+  .container{max-width:1180px; margin:0 auto; padding:0 24px;}
+
+  /* NAV */
+  header{
+    position:sticky; top:0; z-index:50;
+    backdrop-filter:blur(14px);
+    background:rgba(10,7,19,0.72);
+    border-bottom:1px solid var(--border-soft);
+  }
+  .navbar{display:flex; align-items:center; justify-content:space-between; padding:16px 24px; max-width:1180px; margin:0 auto;}
+  .brand{display:flex; align-items:center; gap:10px; font-family:var(--font-display); font-weight:700; font-size:19px; letter-spacing:0.2px;}
+  .brand-mark{width:34px; height:34px; border-radius:10px; display:grid; place-items:center; overflow:hidden;
+    box-shadow:0 0 22px rgba(139,92,246,0.55);
+    font-size:16px;}
+  .brand-mark img{width:100%; height:100%; object-fit:cover;}
+  .foot-mark{width:26px; height:26px; border-radius:8px; overflow:hidden; display:inline-block; vertical-align:middle; margin-right:8px; box-shadow:0 0 14px rgba(139,92,246,0.45);}
+  .foot-mark img{width:100%; height:100%; object-fit:cover;}
+  nav.links{display:flex; align-items:center; gap:4px;}
+  nav.links button{
+    background:none; border:none; color:var(--text-muted); font-size:14.5px; font-weight:500;
+    padding:9px 14px; border-radius:8px; transition:all .15s;
+  }
+  nav.links button:hover, nav.links button.active{color:var(--text); background:var(--surface);}
+  .nav-right{display:flex; align-items:center; gap:10px;}
+  .icon-btn{
+    position:relative; width:38px; height:38px; border-radius:10px; border:1px solid var(--border);
+    background:var(--surface); color:var(--text-muted); display:grid; place-items:center; font-size:16px;
+    transition:all .15s;
+  }
+  .icon-btn:hover{color:var(--text); border-color:var(--accent);}
+  .cart-badge{
+    position:absolute; top:-6px; right:-6px; background:var(--accent-2); color:#fff; font-size:10px; font-weight:700;
+    min-width:17px; height:17px; border-radius:9px; display:grid; place-items:center; padding:0 4px;
+    font-family:var(--font-mono);
+  }
+  .btn{
+    font-weight:600; font-size:14px; padding:10px 18px; border-radius:10px; border:1px solid transparent;
+    transition:all .15s; display:inline-flex; align-items:center; gap:8px; white-space:nowrap;
+  }
+  .btn-primary{background:linear-gradient(140deg, var(--accent), var(--accent-2)); color:#fff; box-shadow:0 4px 18px rgba(139,92,246,0.35);}
+  .btn-primary:hover{filter:brightness(1.1); transform:translateY(-1px);}
+  .btn-ghost{background:var(--surface); border-color:var(--border); color:var(--text);}
+  .btn-ghost:hover{border-color:var(--accent);}
+  .btn-danger{background:rgba(248,113,113,0.12); color:var(--danger); border-color:rgba(248,113,113,0.3);}
+  .btn:disabled{opacity:.5; cursor:not-allowed;}
+  .btn-sm{padding:7px 12px; font-size:13px;}
+  .btn-block{width:100%; justify-content:center;}
+
+  main{position:relative; z-index:1;}
+  .view{display:none; animation:fadeIn .35s ease;}
+  .view.active{display:block;}
+  @keyframes fadeIn{from{opacity:0; transform:translateY(6px);} to{opacity:1; transform:none;}}
+
+  /* HERO */
+  .hero{padding:96px 24px 64px; text-align:center; position:relative;}
+  .eyebrow{
+    display:inline-flex; align-items:center; gap:8px; font-family:var(--font-mono); font-size:12.5px;
+    color:var(--accent-soft); background:rgba(139,92,246,0.1); border:1px solid rgba(139,92,246,0.3);
+    padding:6px 14px; border-radius:999px; margin-bottom:26px; letter-spacing:0.5px;
+  }
+  .eyebrow .dot{width:6px; height:6px; border-radius:50%; background:var(--success); box-shadow:0 0 8px var(--success);}
+  h1.hero-title{
+    font-family:var(--font-display); font-size:clamp(38px,6vw,68px); font-weight:700; line-height:1.05;
+    letter-spacing:-1.5px; max-width:820px; margin:0 auto 22px;
+  }
+  h1.hero-title .grad{background:linear-gradient(140deg, var(--accent-bright), var(--accent-2)); -webkit-background-clip:text; background-clip:text; color:transparent;}
+  .hero-sub{max-width:560px; margin:0 auto 36px; color:var(--text-muted); font-size:17px;}
+  .hero-actions{display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-bottom:64px;}
+  .hero-actions .btn{padding:13px 24px; font-size:15px;}
+
+  .stats{display:flex; justify-content:center; gap:0; flex-wrap:wrap; border:1px solid var(--border-soft); border-radius:var(--radius); overflow:hidden; max-width:720px; margin:0 auto;}
+  .stat{flex:1; min-width:160px; padding:22px 20px; text-align:center; border-right:1px solid var(--border-soft); background:rgba(25,16,41,0.5);}
+  .stat:last-child{border-right:none;}
+  .stat-num{font-family:var(--font-mono); font-size:26px; font-weight:700; color:var(--accent-bright);}
+  .stat-label{font-size:12.5px; color:var(--text-dim); margin-top:4px;}
+
+  /* SECTIONS */
+  section{padding:80px 24px;}
+  .section-head{text-align:center; max-width:600px; margin:0 auto 48px;}
+  .section-tag{font-family:var(--font-mono); font-size:12px; color:var(--accent-soft); letter-spacing:1.5px; text-transform:uppercase; margin-bottom:10px;}
+  h2.section-title{font-family:var(--font-display); font-size:clamp(26px,4vw,36px); font-weight:700; letter-spacing:-0.5px; margin-bottom:12px;}
+  .section-sub{color:var(--text-muted); font-size:15.5px;}
+
+  /* PRODUCT GRID */
+  .grid-products{display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:20px;}
+  .card{
+    background:var(--surface); border:1px solid var(--border-soft); border-radius:var(--radius);
+    padding:24px; transition:all .2s; display:flex; flex-direction:column; gap:14px;
+  }
+  .card:hover{border-color:var(--accent); transform:translateY(-3px); box-shadow:0 12px 30px rgba(139,92,246,0.15);}
+  .card-icon{width:46px; height:46px; border-radius:11px; background:linear-gradient(140deg, rgba(139,92,246,0.25), rgba(192,38,212,0.2)); border:1px solid var(--border); display:grid; place-items:center; font-size:21px;}
+  .card h3{font-family:var(--font-display); font-size:19px; font-weight:600;}
+  .card p.desc{color:var(--text-muted); font-size:13.8px; flex:1;}
+  .keycap{
+    font-family:var(--font-mono); font-size:12.5px; font-weight:600; color:var(--accent-soft);
+    background:rgba(139,92,246,0.1); border:1px solid rgba(139,92,246,0.28); border-radius:7px;
+    padding:3px 9px; display:inline-block; letter-spacing:0.3px;
+  }
+  .card-tags{display:flex; gap:6px; flex-wrap:wrap;}
+  .price-row{display:flex; align-items:baseline; justify-content:space-between; padding-top:10px; border-top:1px solid var(--border-soft);}
+  .price-from{font-size:12px; color:var(--text-dim);}
+  .price-val{font-family:var(--font-mono); font-size:21px; font-weight:700; color:var(--text);}
+  .price-old{font-size:13px; color:var(--text-dim); text-decoration:line-through; margin-right:6px;}
+
+  /* WHY GRID */
+  .grid-why{display:grid; grid-template-columns:repeat(auto-fit, minmax(240px,1fr)); gap:2px; background:var(--border-soft); border:1px solid var(--border-soft); border-radius:var(--radius); overflow:hidden;}
+  .why-item{background:var(--bg-elevated); padding:30px 26px;}
+  .why-item .num{font-family:var(--font-mono); font-size:12px; color:var(--accent-soft); margin-bottom:14px; letter-spacing:1px;}
+  .why-item h4{font-family:var(--font-display); font-size:16.5px; margin-bottom:8px; font-weight:600;}
+  .why-item p{font-size:13.5px; color:var(--text-muted);}
+
+  /* FAQ */
+  .faq-item{border:1px solid var(--border-soft); border-radius:12px; margin-bottom:10px; overflow:hidden; background:var(--surface);}
+  .faq-q{display:flex; align-items:center; justify-content:space-between; padding:18px 20px; cursor:pointer; font-weight:600; font-size:15px;}
+  .faq-q .chev{color:var(--accent-soft); transition:transform .2s; font-family:var(--font-mono);}
+  .faq-item.open .chev{transform:rotate(45deg);}
+  .faq-a{max-height:0; overflow:hidden; transition:max-height .25s ease;}
+  .faq-a-inner{padding:0 20px 18px; color:var(--text-muted); font-size:14px; line-height:1.65;}
+  .faq-item.open .faq-a{max-height:260px;}
+
+  /* REVIEWS */
+  .grid-reviews{display:grid; grid-template-columns:repeat(auto-fit, minmax(260px,1fr)); gap:16px; margin-bottom:36px;}
+  .review-card{background:var(--surface); border:1px solid var(--border-soft); border-radius:var(--radius); padding:20px;}
+  .review-top{display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;}
+  .review-name{font-weight:600; font-size:14.5px;}
+  .stars{color:#fbbf24; font-size:13px; letter-spacing:1px;}
+  .review-msg{color:var(--text-muted); font-size:13.8px;}
+  .review-date{font-family:var(--font-mono); font-size:11px; color:var(--text-dim); margin-top:10px;}
+
+  .panel{background:var(--surface); border:1px solid var(--border-soft); border-radius:var(--radius); padding:28px; max-width:520px; margin:0 auto;}
+  .field{margin-bottom:16px;}
+  .field label{display:block; font-size:13px; font-weight:600; color:var(--text-muted); margin-bottom:6px;}
+  .field input, .field select, .field textarea{
+    width:100%; background:var(--bg-elevated); border:1px solid var(--border); border-radius:9px;
+    padding:11px 13px; color:var(--text); font-family:inherit; font-size:14px;
+  }
+  .field input:focus, .field select:focus, .field textarea:focus{border-color:var(--accent);}
+  .field textarea{resize:vertical; min-height:80px;}
+  .rating-select{display:flex; gap:6px;}
+  .rating-select button{background:var(--bg-elevated); border:1px solid var(--border); border-radius:8px; width:38px; height:38px; color:var(--text-dim); font-size:16px;}
+  .rating-select button.active{color:#fbbf24; border-color:#fbbf24; background:rgba(251,191,36,0.08);}
+
+  footer{border-top:1px solid var(--border-soft); padding:40px 24px; text-align:center; color:var(--text-dim); font-size:13px;}
+  footer .foot-brand{font-family:var(--font-display); color:var(--text-muted); margin-bottom:10px; font-weight:600;}
+  footer .foot-links{display:flex; gap:18px; justify-content:center; margin-top:14px; flex-wrap:wrap;}
+
+  /* MODAL / DRAWER */
+  .overlay{position:fixed; inset:0; background:rgba(6,4,12,0.72); backdrop-filter:blur(3px); z-index:100; display:none; align-items:center; justify-content:center; padding:20px;}
+  .overlay.active{display:flex;}
+  .modal{background:var(--bg-elevated); border:1px solid var(--border); border-radius:16px; max-width:480px; width:100%; max-height:88vh; overflow-y:auto; padding:28px; position:relative;}
+  .modal-close{position:absolute; top:16px; right:16px; width:32px; height:32px; border-radius:8px; background:var(--surface); border:1px solid var(--border); color:var(--text-muted); display:grid; place-items:center;}
+  .modal h3{font-family:var(--font-display); font-size:21px; margin-bottom:6px;}
+
+  .drawer{position:fixed; top:0; right:0; height:100%; width:min(400px, 100vw); background:var(--bg-elevated); border-left:1px solid var(--border); z-index:101; transform:translateX(100%); transition:transform .3s ease; display:flex; flex-direction:column; padding:24px;}
+  .drawer.active{transform:translateX(0);}
+  .drawer-head{display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;}
+  .cart-item{display:flex; gap:12px; padding:14px 0; border-bottom:1px solid var(--border-soft); align-items:center;}
+  .cart-item-info{flex:1;}
+  .cart-item-info .n{font-size:14px; font-weight:600;}
+  .cart-item-info .d{font-size:12px; color:var(--text-dim); font-family:var(--font-mono);}
+  .cart-empty{text-align:center; color:var(--text-dim); padding:60px 0; font-size:14px;}
+  .drawer-footer{border-top:1px solid var(--border-soft); padding-top:18px; margin-top:auto;}
+  .total-row{display:flex; justify-content:space-between; margin-bottom:14px; font-size:15px;}
+  .total-row .v{font-family:var(--font-mono); font-weight:700; font-size:19px;}
+
+  .license-key{
+    font-family:var(--font-mono); font-size:18px; font-weight:700; letter-spacing:2px; color:var(--accent-bright);
+    background:rgba(139,92,246,0.1); border:1px dashed var(--accent); border-radius:10px; padding:14px 16px;
+    text-align:center; margin:10px 0; position:relative; overflow:hidden;
+  }
+  .license-key::before{content:''; position:absolute; inset:0; background:linear-gradient(90deg, transparent, rgba(139,92,246,0.25), transparent); animation:scan 2.2s linear infinite;}
+  @keyframes scan{from{transform:translateX(-100%);} to{transform:translateX(100%);}}
+
+  .toast{position:fixed; bottom:24px; left:50%; transform:translateX(-50%) translateY(20px); background:var(--surface); border:1px solid var(--accent); color:var(--text); padding:12px 20px; border-radius:10px; font-size:14px; z-index:200; opacity:0; transition:all .25s; box-shadow:0 8px 24px rgba(0,0,0,0.4);}
+  .toast.show{opacity:1; transform:translateX(-50%) translateY(0);}
+
+  .tabs{display:flex; gap:6px; margin-bottom:28px; border-bottom:1px solid var(--border-soft); flex-wrap:wrap;}
+  .tab-btn{background:none; border:none; color:var(--text-muted); padding:10px 16px; font-weight:600; font-size:14px; border-bottom:2px solid transparent; margin-bottom:-1px;}
+  .tab-btn.active{color:var(--text); border-color:var(--accent);}
+
+  .table-wrap{overflow-x:auto; border:1px solid var(--border-soft); border-radius:12px;}
+  table{width:100%; border-collapse:collapse; font-size:13.5px;}
+  th{text-align:left; padding:12px 14px; background:var(--surface); color:var(--text-muted); font-size:12px; text-transform:uppercase; letter-spacing:0.5px; border-bottom:1px solid var(--border-soft);}
+  td{padding:12px 14px; border-bottom:1px solid var(--border-soft); color:var(--text);}
+  tr:last-child td{border-bottom:none;}
+  .badge{font-family:var(--font-mono); font-size:11px; padding:3px 8px; border-radius:6px; background:rgba(52,211,153,0.12); color:var(--success);}
+
+  .admin-grid{display:grid; grid-template-columns:1fr 1fr; gap:14px;}
+  @media (max-width:640px){.admin-grid{grid-template-columns:1fr;}}
+  .product-row{background:var(--surface); border:1px solid var(--border-soft); border-radius:12px; padding:18px; margin-bottom:12px;}
+  .product-row-head{display:flex; justify-content:space-between; align-items:flex-start; gap:10px; margin-bottom:10px;}
+  .opt-row{display:grid; grid-template-columns:2fr 1fr 1fr auto; gap:8px; margin-bottom:8px; align-items:center;}
+  @media (max-width:600px){.opt-row{grid-template-columns:1fr 1fr;}}
+  .opt-row input{padding:8px 10px; font-size:13px;}
+
+  nav.links{display:none;}
+  @media(min-width:900px){nav.links{display:flex;}}
+  .mobile-nav{display:flex; gap:4px; overflow-x:auto; padding:0 24px 14px; }
+  @media(min-width:900px){.mobile-nav{display:none;}}
+  .mobile-nav button{white-space:nowrap; background:var(--surface); border:1px solid var(--border-soft); color:var(--text-muted); padding:8px 14px; border-radius:8px; font-size:13px; font-weight:500;}
+  .mobile-nav button.active{color:var(--text); border-color:var(--accent);}
+
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:.001s !important; transition-duration:.001s !important;}
+  }
+</style>
+</head>
+<body>
+
+<canvas id="starfield"></canvas>
+<div class="bg-glow"></div>
+
+<div class="wrap">
+  <header>
+    <div class="navbar">
+      <div class="brand">
+        <div class="brand-mark"><img src="data:image/png;base64,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" alt="GalaxyBots"></div>
+        GalaxyBots
+      </div>
+      <nav class="links">
+        <button data-view="home" class="active">Accueil</button>
+        <button data-view="products">Nos Bots</button>
+        <button data-view="faq">FAQ</button>
+        <button data-view="reviews">Avis</button>
+        <button data-view="licenses">Mes licences</button>
+      </nav>
+      <div class="nav-right">
+        <button class="icon-btn" id="cartBtn" title="Panier">🛒<span class="cart-badge" id="cartCount" style="display:none">0</span></button>
+        <button class="btn btn-ghost btn-sm" id="loginNavBtn">Connexion</button>
+        <button class="btn btn-ghost btn-sm" id="adminNavBtn" title="Panel Admin">⚙ Admin</button>
+      </div>
+    </div>
+    <div class="mobile-nav">
+      <button data-view="home" class="active">Accueil</button>
+      <button data-view="products">Nos Bots</button>
+      <button data-view="faq">FAQ</button>
+      <button data-view="reviews">Avis</button>
+      <button data-view="licenses">Mes licences</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <div class="view active" id="view-home">
+      <div class="hero">
+        <div class="eyebrow"><span class="dot"></span> Livraison instantanée · Licences actives</div>
+        <h1 class="hero-title">Des bots Discord <span class="grad">taillés pour l'espace</span> de ton serveur</h1>
+        <p class="hero-sub">Modération, gestion et animation automatisées. Configure, achète, reçois ta clé de licence en quelques secondes.</p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" data-view-link="products">Voir les bots →</button>
+          <button class="btn btn-ghost" data-view-link="faq">Comment ça marche</button>
+        </div>
+        <div class="stats">
+          <div class="stat"><div class="stat-num" id="statLicenses">0</div><div class="stat-label">Licences délivrées</div></div>
+          <div class="stat"><div class="stat-num" id="statReviews">0</div><div class="stat-label">Avis clients</div></div>
+          <div class="stat"><div class="stat-num">24/7</div><div class="stat-label">Support actif</div></div>
+        </div>
+      </div>
+
+      <section>
+        <div class="section-head">
+          <div class="section-tag">Catalogue</div>
+          <h2 class="section-title">Nos bots</h2>
+          <p class="section-sub">Choisis une durée, paie, et récupère ta clé instantanément.</p>
+        </div>
+        <div class="grid-products" id="homeProductGrid"></div>
+      </section>
+
+      <section>
+        <div class="section-head">
+          <div class="section-tag">Pourquoi GalaxyBots</div>
+          <h2 class="section-title">Pensé pour les administrateurs exigeants</h2>
+        </div>
+        <div class="grid-why">
+          <div class="why-item"><div class="num">01</div><h4>Livraison immédiate</h4><p>La clé de licence est générée dès la confirmation du paiement, sans attente.</p></div>
+          <div class="why-item"><div class="num">02</div><h4>Panel de configuration</h4><p>Chaque licence se pilote depuis un tableau de bord clair, pensé pour aller vite.</p></div>
+          <div class="why-item"><div class="num">03</div><h4>Support réactif</h4><p>Une équipe joignable et une documentation pas à pas pour l'activation.</p></div>
+          <div class="why-item"><div class="num">04</div><h4>Mises à jour continues</h4><p>Les bots évoluent avec Discord : correctifs et nouveautés livrés en continu.</p></div>
+          <div class="why-item"><div class="num">05</div><h4>Tarifs transparents</h4><p>Un prix par durée, sans frais cachés, affiché avant l'achat.</p></div>
+          <div class="why-item"><div class="num">06</div><h4>Licences flexibles</h4><p>Une licence non utilisée peut servir à activer ou renouveler un bot existant.</p></div>
+        </div>
+      </section>
+    </div>
+
+    <!-- PRODUCTS -->
+    <div class="view" id="view-products">
+      <section style="padding-top:56px">
+        <div class="section-head">
+          <div class="section-tag">Catalogue complet</div>
+          <h2 class="section-title">Nos Bots</h2>
+          <p class="section-sub">Sélectionne une durée d'abonnement pour chaque bot.</p>
+        </div>
+        <div class="grid-products" id="fullProductGrid"></div>
+      </section>
+    </div>
+
+    <!-- FAQ -->
+    <div class="view" id="view-faq">
+      <section style="padding-top:56px; max-width:760px; margin:0 auto;">
+        <div class="section-head">
+          <div class="section-tag">Aide</div>
+          <h2 class="section-title">Questions fréquentes</h2>
+        </div>
+        <div id="faqList"></div>
+      </section>
+    </div>
+
+    <!-- REVIEWS -->
+    <div class="view" id="view-reviews">
+      <section style="padding-top:56px">
+        <div class="section-head">
+          <div class="section-tag">Communauté</div>
+          <h2 class="section-title">Avis de nos clients</h2>
+        </div>
+        <div class="grid-reviews" id="reviewsGrid"></div>
+        <div class="panel">
+          <h3 style="font-family:var(--font-display); margin-bottom:18px;">Laisser un avis</h3>
+          <div class="field"><label>Ton prénom</label><input id="revName" placeholder="Ex : Alex"></div>
+          <div class="field"><label>Note</label><div class="rating-select" id="revStars"></div></div>
+          <div class="field"><label>Ton message</label><textarea id="revMsg" placeholder="Qu'as-tu pensé de GalaxyBots ?"></textarea></div>
+          <button class="btn btn-primary btn-block" id="submitReview">Publier l'avis</button>
+        </div>
+      </section>
+    </div>
+
+    <!-- LICENSES LOOKUP -->
+    <div class="view" id="view-licenses">
+      <section style="padding-top:56px">
+        <div class="section-head">
+          <div class="section-tag">Espace client</div>
+          <h2 class="section-title">Mes licences</h2>
+          <p class="section-sub">Entre l'email utilisé lors de l'achat pour retrouver tes clés.</p>
+        </div>
+        <div class="panel">
+          <div class="field"><label>Email</label><input id="lookupEmail" type="email" placeholder="toi@exemple.com"></div>
+          <button class="btn btn-primary btn-block" id="lookupBtn">Rechercher mes licences</button>
+        </div>
+        <div id="lookupResults" style="max-width:520px; margin:24px auto 0;"></div>
+      </section>
+    </div>
+
+    <!-- ADMIN -->
+    <div class="view" id="view-admin">
+      <section style="padding-top:56px">
+        <div class="section-head">
+          <div class="section-tag">Backoffice</div>
+          <h2 class="section-title">Panel Admin</h2>
+          <p class="section-sub">Configure ton catalogue, consulte les commandes et modère les avis.</p>
+        </div>
+        <div id="adminGate" class="panel" style="max-width:460px;">
+          <div class="tabs" style="margin-bottom:22px;">
+            <button class="tab-btn active" data-gate="owner">Propriétaire</button>
+            <button class="tab-btn" data-gate="team">Membre de l'équipe</button>
+          </div>
+          <div id="gate-owner">
+            <div class="field"><label>Mot de passe admin</label><input id="adminPass" type="password" placeholder="••••••••"></div>
+            <button class="btn btn-primary btn-block" id="adminLoginBtn">Entrer dans le panel</button>
+            <p style="font-size:12px; color:var(--text-dim); margin-top:12px;">Démo — mot de passe : <code style="color:var(--accent-soft)">galaxy-admin</code>. À remplacer par une vraie authentification côté serveur en production.</p>
+          </div>
+          <div id="gate-team" style="display:none">
+            <div class="field"><label>Email d'équipe</label><input id="teamEmail" type="email" placeholder="toi@exemple.com"></div>
+            <button class="btn btn-primary btn-block" id="teamLoginBtn">Accéder au panel</button>
+            <p style="font-size:12px; color:var(--text-dim); margin-top:12px;">Ton accès dépend du rôle qui t'a été attribué par le propriétaire.</p>
+          </div>
+        </div>
+        <div id="adminPanel" style="display:none; max-width:1000px; margin:0 auto;">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
+            <div id="adminWhoami" style="font-size:13px; color:var(--text-muted);"></div>
+            <button class="btn btn-ghost btn-sm" id="adminLogoutBtn">Se déconnecter</button>
+          </div>
+          <div class="tabs">
+            <button class="tab-btn active" data-tab="products">Produits</button>
+            <button class="tab-btn" data-tab="orders">Commandes</button>
+            <button class="tab-btn" data-tab="reviews-mod">Avis</button>
+            <button class="tab-btn" data-tab="team">Équipe &amp; Rôles</button>
+          </div>
+          <div id="tab-products">
+            <button class="btn btn-primary btn-sm" id="addProductBtn" style="margin-bottom:18px;">+ Ajouter un bot</button>
+            <div id="adminProductList"></div>
+          </div>
+          <div id="tab-orders" style="display:none">
+            <div class="table-wrap"><table>
+              <thead><tr><th>Date</th><th>Email</th><th>Produit</th><th>Clé</th><th>Total</th></tr></thead>
+              <tbody id="ordersTableBody"></tbody>
+            </table></div>
+          </div>
+          <div id="tab-reviews-mod" style="display:none">
+            <div id="adminReviewsList"></div>
+          </div>
+          <div id="tab-team" style="display:none">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px;">
+              <h4 style="font-family:var(--font-display); font-size:16px;">Rôles</h4>
+              <button class="btn btn-primary btn-sm" id="addRoleBtn">+ Créer un rôle</button>
+            </div>
+            <div id="rolesList" style="margin-bottom:32px;"></div>
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px;">
+              <h4 style="font-family:var(--font-display); font-size:16px;">Membres de l'équipe</h4>
+              <button class="btn btn-primary btn-sm" id="addMemberBtn">+ Ajouter un membre</button>
+            </div>
+            <div class="table-wrap"><table>
+              <thead><tr><th>Nom</th><th>Email</th><th>Rôle</th><th></th></tr></thead>
+              <tbody id="teamTableBody"></tbody>
+            </table></div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="foot-brand"><span class="foot-mark"><img src="data:image/png;base64,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" alt=""></span>GalaxyBots</div>
+    <p>© 2026 GalaxyBots — Tous droits réservés.</p>
+    <div class="foot-links">
+      <a href="#" data-view-link="products">Nos Bots</a>
+      <a href="#" data-view-link="faq">FAQ</a>
+      <a href="#" data-view-link="reviews">Avis</a>
+      <a href="#" data-view-link="licenses">Mes licences</a>
+    </div>
+  </footer>
+</div>
+
+<!-- CART DRAWER -->
+<div class="drawer" id="cartDrawer">
+  <div class="drawer-head">
+    <h3 style="font-family:var(--font-display); font-size:19px;">Ton panier</h3>
+    <button class="modal-close" id="closeCart">✕</button>
+  </div>
+  <div id="cartItems" style="flex:1; overflow-y:auto;"></div>
+  <div class="drawer-footer" id="cartFooter" style="display:none">
+    <div class="total-row"><span>Total</span><span class="v" id="cartTotal">0,00 €</span></div>
+    <button class="btn btn-primary btn-block" id="checkoutBtn">Passer au paiement</button>
+  </div>
+</div>
+
+<!-- PRODUCT MODAL -->
+<div class="overlay" id="productOverlay">
+  <div class="modal" id="productModal"></div>
+</div>
+
+<!-- CHECKOUT MODAL -->
+<div class="overlay" id="checkoutOverlay">
+  <div class="modal" id="checkoutModal"></div>
+</div>
+
+<!-- LOGIN MODAL -->
+<div class="overlay" id="loginOverlay">
+  <div class="modal">
+    <button class="modal-close" id="closeLogin">✕</button>
+    <h3>Connexion</h3>
+    <p style="color:var(--text-muted); font-size:13.5px; margin-bottom:18px;">Démo — indique ton email pour accéder à ton espace client (pas de mot de passe dans ce prototype).</p>
+    <div class="field"><label>Email</label><input id="loginEmail" type="email" placeholder="toi@exemple.com"></div>
+    <button class="btn btn-primary btn-block" id="loginSubmit">Se connecter</button>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+/* ---------- Starfield ---------- */
+(function(){
+  const c = document.getElementById('starfield');
+  const ctx = c.getContext('2d');
+  let stars = [];
+  function resize(){
+    c.width = window.innerWidth; c.height = Math.min(window.innerHeight*1.1, 900);
+    stars = Array.from({length:140}, ()=>({
+      x:Math.random()*c.width, y:Math.random()*c.height, r:Math.random()*1.3+0.2,
+      s:Math.random()*0.4+0.1, o:Math.random()*0.6+0.2
+    }));
+  }
+  function draw(){
+    ctx.clearRect(0,0,c.width,c.height);
+    stars.forEach(st=>{
+      ctx.beginPath();
+      ctx.fillStyle = `rgba(196,181,253,${st.o})`;
+      ctx.arc(st.x, st.y, st.r, 0, Math.PI*2);
+      ctx.fill();
+      st.y += st.s;
+      if(st.y > c.height) st.y = 0;
+    });
+    requestAnimationFrame(draw);
+  }
+  resize();
+  window.addEventListener('resize', resize);
+  draw();
+})();
+
+/* ---------- State & storage helpers ---------- */
+const DEFAULT_PRODUCTS = [
+  {
+    id:'p-gestion', name:'Bot Gestion', icon:'🛰️', category:'Modération',
+    desc:"Modération automatisée, logs, anti-raid et configuration complète de ton serveur.",
+    options:[
+      {id:'g1', label:'1 mois', price:2.5, days:30},
+      {id:'g3', label:'3 mois', price:6.5, days:90},
+      {id:'g12', label:'12 mois', price:22, days:365}
+    ]
+  },
+  {
+    id:'p-music', name:'Bot Musique IA', icon:'🎧', category:'Animation',
+    desc:"Musique 24/7 en salon vocal avec recommandations et playlists géné­rées par IA, commandes fluides.",
+    options:[
+      {id:'r1', label:'1 mois', price:1.5, days:30},
+      {id:'r3', label:'3 mois', price:4, days:90},
+      {id:'r12', label:'12 mois', price:14, days:365}
+    ]
+  }
+];
+const DEFAULT_FAQ = [
+  {q:"Comment activer mon bot ?", a:"Après le paiement, tu reçois un code de licence. Utilise /active-bot token:<ton token> licence-id:<ta clé> sur le serveur du Bot Manager, puis /mybot action:start."},
+  {q:"Comment renouveler mon bot ?", a:"Chaque achat génère un nouveau code indépendant. Pour prolonger une licence existante plutôt que d'en recréer une, contacte le support."},
+  {q:"Puis-je créer un bot sans PC ?", a:"Oui. L'hébergement et les mises à jour sont gérés par GalaxyBots : tu peux tout configurer depuis ton téléphone."},
+  {q:"Comment récupérer ma clé après achat ?", a:"Elle s'affiche immédiatement après le paiement et reste consultable dans l'onglet Mes licences avec l'email utilisé à l'achat."}
+];
+
+const DEFAULT_ROLES = [
+  {id:'role-responsable', name:'Responsable serveur', color:'#8b5cf6', perms:{products:true, orders:true, reviews:true, team:false}},
+  {id:'role-support', name:'Support', color:'#34d399', perms:{products:false, orders:true, reviews:true, team:false}}
+];
+
+/* ---------- Real payment configuration ---------- */
+// PUBLIC PayPal client id — this one is NOT secret, it's meant to be visible in the browser.
+// The secret key stays server-side only, in your Vercel/Netlify environment variables.
+const CONFIG = {
+  PAYPAL_CLIENT_ID: 'REMPLACE_PAR_TON_PAYPAL_CLIENT_ID', // ex: AZDx... (voir README.md)
+  API_BASE: '' // laisse vide si l'API est sur le même domaine (ex: /api/create-order)
+};
+
+const INSTRUCTIONS = {
+  'p-gestion': {
+    title: "Activer ton Bot Gestion",
+    steps: [
+      "Va sur le serveur Discord du Bot Manager GalaxyBots.",
+      "Utilise <code>/active-bot token:&lt;ton token de bot Discord&gt; licence-id:&lt;ta clé ci-dessus&gt;</code> (réponse privée, personne ne voit ton token).",
+      "Démarre-le avec <code>/mybot action:start</code>.",
+      "Suis avec <code>/mybot action:status</code> pour voir la date d'expiration à tout moment."
+    ]
+  },
+  'p-music': {
+    title: "Activer ton Bot Musique IA",
+    steps: [
+      "Va sur le serveur Discord du Bot Manager GalaxyBots.",
+      "Utilise <code>/active-bot token:&lt;ton token de bot Discord&gt; licence-id:&lt;ta clé ci-dessus&gt;</code> (réponse privée, personne ne voit ton token).",
+      "Démarre-le avec <code>/mybot action:start</code>.",
+      "Suis avec <code>/mybot action:status</code> pour voir la date d'expiration à tout moment."
+    ]
+  }
+};
+
+let PRODUCTS = [];
+let REVIEWS = [];
+let ORDERS = [];
+let ROLES = [];
+let TEAM = [];
+let CART = [];
+let currentUserEmail = null;
+let isAdmin = false;
+let isOwner = false;
+let currentAdminPerms = {products:false, orders:false, reviews:false, team:false};
+let editingProductId = null;
+
+function toast(msg){
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(()=>t.classList.remove('show'), 2400);
+}
+function money(n){ return n.toLocaleString('fr-FR', {minimumFractionDigits:2, maximumFractionDigits:2}) + ' €'; }
+function genKey(){
+  const seg = ()=>Math.random().toString(36).slice(2,6).toUpperCase();
+  return `GLXY-${seg()}-${seg()}-${seg()}`;
+}
+function uid(){ return Math.random().toString(36).slice(2,10); }
+
+async function loadAll(){
+  try{
+    const p = await window.storage.get('products', true);
+    PRODUCTS = p ? JSON.parse(p.value) : DEFAULT_PRODUCTS;
+  }catch(e){ PRODUCTS = DEFAULT_PRODUCTS; await saveProducts(); }
+  try{
+    const r = await window.storage.get('reviews', true);
+    REVIEWS = r ? JSON.parse(r.value) : [];
+  }catch(e){ REVIEWS = []; }
+  try{
+    const o = await window.storage.get('orders', true);
+    ORDERS = o ? JSON.parse(o.value) : [];
+  }catch(e){ ORDERS = []; }
+  try{
+    const rl = await window.storage.get('roles', true);
+    ROLES = rl ? JSON.parse(rl.value) : DEFAULT_ROLES;
+  }catch(e){ ROLES = DEFAULT_ROLES; await saveRoles(); }
+  try{
+    const tm = await window.storage.get('team', true);
+    TEAM = tm ? JSON.parse(tm.value) : [];
+  }catch(e){ TEAM = []; }
+  renderAll();
+}
+async function saveProducts(){
+  try{ await window.storage.set('products', JSON.stringify(PRODUCTS), true); }catch(e){ console.error(e); }
+}
+async function saveReviews(){
+  try{ await window.storage.set('reviews', JSON.stringify(REVIEWS), true); }catch(e){ console.error(e); }
+}
+async function saveOrders(){
+  try{ await window.storage.set('orders', JSON.stringify(ORDERS), true); }catch(e){ console.error(e); }
+}
+async function saveRoles(){
+  try{ await window.storage.set('roles', JSON.stringify(ROLES), true); }catch(e){ console.error(e); }
+}
+async function saveTeam(){
+  try{ await window.storage.set('team', JSON.stringify(TEAM), true); }catch(e){ console.error(e); }
+}
+
+/* ---------- Rendering ---------- */
+function productCard(p, big){
+  const minPrice = Math.min(...p.options.map(o=>o.price));
+  return `
+    <div class="card" data-product="${p.id}">
+      <div class="card-icon">${p.icon}</div>
+      <h3>${p.name}</h3>
+      <p class="desc">${p.desc}</p>
+      <div class="card-tags"><span class="keycap">${p.category}</span><span class="keycap">${p.options.length} formules</span></div>
+      <div class="price-row">
+        <span class="price-from">à partir de</span>
+        <span class="price-val">${money(minPrice)}</span>
+      </div>
+      <button class="btn btn-primary btn-block open-product" data-id="${p.id}">Voir les licences</button>
+    </div>`;
+}
+function renderProducts(){
+  const html = PRODUCTS.map(p=>productCard(p)).join('');
+  document.getElementById('homeProductGrid').innerHTML = PRODUCTS.slice(0,4).map(p=>productCard(p)).join('') || emptyState('Aucun bot pour le moment.');
+  document.getElementById('fullProductGrid').innerHTML = html || emptyState('Aucun bot configuré. Ajoute-en depuis le panel admin.');
+  document.querySelectorAll('.open-product').forEach(b=>b.addEventListener('click', ()=>openProductModal(b.dataset.id)));
+  document.getElementById('statLicenses').textContent = (1000 + ORDERS.length).toLocaleString('fr-FR');
+}
+function emptyState(msg){ return `<p style="color:var(--text-dim); text-align:center; padding:40px 0; grid-column:1/-1;">${msg}</p>`; }
+
+function renderFAQ(){
+  document.getElementById('faqList').innerHTML = DEFAULT_FAQ.map((f,i)=>`
+    <div class="faq-item" data-i="${i}">
+      <div class="faq-q"><span>${f.q}</span><span class="chev">+</span></div>
+      <div class="faq-a"><div class="faq-a-inner">${f.a}</div></div>
+    </div>`).join('');
+  document.querySelectorAll('.faq-item').forEach(item=>{
+    item.querySelector('.faq-q').addEventListener('click', ()=>item.classList.toggle('open'));
+  });
+}
+
+function renderReviews(){
+  document.getElementById('statReviews').textContent = REVIEWS.length;
+  const grid = document.getElementById('reviewsGrid');
+  if(!REVIEWS.length){ grid.innerHTML = emptyState("Pas encore d'avis — sois le premier !"); return; }
+  grid.innerHTML = REVIEWS.slice().reverse().map(r=>`
+    <div class="review-card">
+      <div class="review-top"><span class="review-name">${escapeHtml(r.name)}</span><span class="stars">${'★'.repeat(r.rating)}${'☆'.repeat(5-r.rating)}</span></div>
+      <p class="review-msg">${escapeHtml(r.message)}</p>
+      <div class="review-date">${r.date}</div>
+    </div>`).join('');
+}
+function escapeHtml(s){ const d=document.createElement('div'); d.textContent=s; return d.innerHTML; }
+
+function renderCart(){
+  const wrap = document.getElementById('cartItems');
+  const footer = document.getElementById('cartFooter');
+  document.getElementById('cartCount').style.display = CART.length ? 'grid' : 'none';
+  document.getElementById('cartCount').textContent = CART.length;
+  if(!CART.length){
+    wrap.innerHTML = `<div class="cart-empty">Ton panier est vide.<br>Ajoute une licence depuis le catalogue.</div>`;
+    footer.style.display = 'none';
+    return;
+  }
+  wrap.innerHTML = CART.map((it,idx)=>`
+    <div class="cart-item">
+      <div class="card-icon" style="width:38px;height:38px;font-size:16px;">${it.icon}</div>
+      <div class="cart-item-info">
+        <div class="n">${it.name}</div>
+        <div class="d">${it.optionLabel} · ${money(it.price)}</div>
+      </div>
+      <button class="icon-btn" style="width:30px;height:30px;font-size:13px;" data-remove="${idx}">✕</button>
+    </div>`).join('');
+  document.querySelectorAll('[data-remove]').forEach(b=>b.addEventListener('click', ()=>{
+    CART.splice(+b.dataset.remove,1); renderCart();
+  }));
+  const total = CART.reduce((s,it)=>s+it.price,0);
+  document.getElementById('cartTotal').textContent = money(total);
+  footer.style.display = 'block';
+}
+
+function renderAll(){
+  renderProducts(); renderFAQ(); renderReviews(); renderCart();
+  if(isAdmin) renderAdminProducts();
+}
+
+/* ---------- Navigation ---------- */
+function showView(name){
+  document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));
+  document.getElementById('view-'+name).classList.add('active');
+  document.querySelectorAll('nav.links button, .mobile-nav button').forEach(b=>{
+    b.classList.toggle('active', b.dataset.view === name);
+  });
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+document.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click', ()=>showView(b.dataset.view)));
+document.querySelectorAll('[data-view-link]').forEach(b=>b.addEventListener('click', (e)=>{ e.preventDefault(); showView(b.dataset.viewLink); }));
+document.getElementById('adminNavBtn').addEventListener('click', ()=>showView('admin'));
+
+/* ---------- Product modal ---------- */
+function openProductModal(id){
+  const p = PRODUCTS.find(x=>x.id===id);
+  if(!p) return;
+  const modal = document.getElementById('productModal');
+  modal.innerHTML = `
+    <button class="modal-close" id="closeProduct">✕</button>
+    <div class="card-icon" style="margin-bottom:14px;">${p.icon}</div>
+    <h3>${p.name}</h3>
+    <p style="color:var(--text-muted); font-size:14px; margin:8px 0 20px;">${p.desc}</p>
+    <div id="optionList">
+      ${p.options.map(o=>`
+        <label style="display:flex; align-items:center; justify-content:space-between; padding:14px; border:1px solid var(--border); border-radius:10px; margin-bottom:10px; cursor:pointer;" class="opt-choice" data-oid="${o.id}">
+          <span style="display:flex; align-items:center; gap:10px;">
+            <input type="radio" name="opt" value="${o.id}" style="accent-color:var(--accent)">
+            ${o.label}
+          </span>
+          <span class="keycap">${money(o.price)}</span>
+        </label>`).join('')}
+    </div>
+    <button class="btn btn-primary btn-block" id="addToCartBtn" style="margin-top:6px;">Ajouter au panier</button>
+  `;
+  document.getElementById('productOverlay').classList.add('active');
+  document.getElementById('closeProduct').addEventListener('click', ()=>document.getElementById('productOverlay').classList.remove('active'));
+  modal.querySelectorAll('.opt-choice').forEach(el=>el.addEventListener('click', ()=>{
+    modal.querySelectorAll('input[name=opt]').forEach(r=>r.checked=false);
+    el.querySelector('input').checked = true;
+  }));
+  document.getElementById('addToCartBtn').addEventListener('click', ()=>{
+    const sel = modal.querySelector('input[name=opt]:checked');
+    if(!sel){ toast('Choisis une durée'); return; }
+    const opt = p.options.find(o=>o.id===sel.value);
+    CART.push({productId:p.id, optionId:opt.id, name:p.name, icon:p.icon, optionLabel:opt.label, price:opt.price, days:opt.days});
+    renderCart();
+    document.getElementById('productOverlay').classList.remove('active');
+    toast(`${p.name} (${opt.label}) ajouté au panier`);
+  });
+}
+document.getElementById('productOverlay').addEventListener('click', (e)=>{ if(e.target.id==='productOverlay') e.currentTarget.classList.remove('active'); });
+
+/* ---------- Cart drawer ---------- */
+document.getElementById('cartBtn').addEventListener('click', ()=>document.getElementById('cartDrawer').classList.add('active'));
+document.getElementById('closeCart').addEventListener('click', ()=>document.getElementById('cartDrawer').classList.remove('active'));
+
+/* ---------- Checkout ---------- */
+document.getElementById('checkoutBtn').addEventListener('click', ()=>{
+  if(!CART.length) return;
+  document.getElementById('cartDrawer').classList.remove('active');
+  openCheckout();
+});
+let paypalSDKPromise = null;
+function loadPayPalSDK(){
+  if(paypalSDKPromise) return paypalSDKPromise;
+  paypalSDKPromise = new Promise((resolve, reject)=>{
+    if(window.paypal) return resolve(window.paypal);
+    const s = document.createElement('script');
+    s.src = `https://www.paypal.com/sdk/js?client-id=${encodeURIComponent(CONFIG.PAYPAL_CLIENT_ID)}&currency=EUR&intent=capture`;
+    s.onload = ()=>resolve(window.paypal);
+    s.onerror = ()=>reject(new Error('sdk-load-failed'));
+    document.head.appendChild(s);
+  });
+  return paypalSDKPromise;
+}
+
+function openCheckout(){
+  const total = CART.reduce((s,it)=>s+it.price,0);
+  const modal = document.getElementById('checkoutModal');
+  modal.innerHTML = `
+    <button class="modal-close" id="closeCheckout">✕</button>
+    <h3>Finaliser la commande</h3>
+    <p style="color:var(--text-muted); font-size:13px; margin:6px 0 20px;">Paiement sécurisé par PayPal. Ta clé de licence est générée automatiquement dès la confirmation du paiement.</p>
+    <div class="field"><label>Email de livraison</label><input id="checkoutEmail" type="email" placeholder="toi@exemple.com" value="${currentUserEmail||''}"></div>
+    <div class="field"><label>Pseudo ou ID Discord (optionnel — accélère l'activation)</label><input id="checkoutDiscord" type="text" placeholder="ex: 123456789012345678"></div>
+    <div style="border-top:1px solid var(--border-soft); padding-top:14px; margin:10px 0 18px;">
+      ${CART.map(it=>`<div style="display:flex; justify-content:space-between; font-size:13.5px; color:var(--text-muted); margin-bottom:6px;"><span>${it.name} — ${it.optionLabel}</span><span>${money(it.price)}</span></div>`).join('')}
+      <div style="display:flex; justify-content:space-between; font-weight:700; margin-top:10px; font-size:16px;"><span>Total</span><span style="font-family:var(--font-mono)">${money(total)}</span></div>
+    </div>
+    <div id="payErrors" style="display:none; color:#f87171; font-size:13px; margin-bottom:10px;"></div>
+    <div id="paypalButtonContainer"></div>
+    <p style="text-align:center; font-size:11px; color:var(--text-dim); margin-top:10px;">En payant, tu acceptes que la clé soit liée à l'email fourni.</p>
+  `;
+  document.getElementById('checkoutOverlay').classList.add('active');
+  document.getElementById('closeCheckout').addEventListener('click', ()=>document.getElementById('checkoutOverlay').classList.remove('active'));
+  renderPayPalButtons(total);
+}
+document.getElementById('checkoutOverlay').addEventListener('click', (e)=>{ if(e.target.id==='checkoutOverlay') e.currentTarget.classList.remove('active'); });
+
+function showPayError(msg){
+  const el = document.getElementById('payErrors');
+  if(!el) return;
+  el.textContent = msg;
+  el.style.display = 'block';
+}
+
+async function renderPayPalButtons(total){
+  const container = document.getElementById('paypalButtonContainer');
+  try{
+    const paypal = await loadPayPalSDK();
+    if(!paypal || CONFIG.PAYPAL_CLIENT_ID.startsWith('REMPLACE')) throw new Error('not-configured');
+
+    paypal.Buttons({
+      style:{ layout:'vertical', color:'gold', shape:'rect', label:'paypal' },
+      createOrder: async ()=>{
+        const email = document.getElementById('checkoutEmail').value.trim();
+        if(!email || !email.includes('@')){ toast('Entre un email valide'); throw new Error('bad-email'); }
+        const res = await fetch(`${CONFIG.API_BASE}/api/create-order`, {
+          method:'POST', headers:{'Content-Type':'application/json'},
+          body: JSON.stringify({ items: CART.map(it=>({productId:it.productId, optionId:it.optionId})) })
+        });
+        const data = await res.json();
+        if(!res.ok) throw new Error(data.error || 'Erreur création commande');
+        return data.id;
+      },
+      onApprove: async (data)=>{
+        const email = document.getElementById('checkoutEmail').value.trim();
+        const discordId = document.getElementById('checkoutDiscord').value.trim();
+        const res = await fetch(`${CONFIG.API_BASE}/api/capture-order`, {
+          method:'POST', headers:{'Content-Type':'application/json'},
+          body: JSON.stringify({ orderId: data.orderID, email, discordId })
+        });
+        const result = await res.json();
+        if(!res.ok){ showPayError(result.error || 'Le paiement n\'a pas pu être confirmé.'); return; }
+        currentUserEmail = email;
+        showLicenseSuccess(result.licenses, email);
+      },
+      onError: (err)=>{ console.error(err); showPayError('Le paiement PayPal a échoué. Réessaie ou contacte le support.'); }
+    }).render('#paypalButtonContainer');
+  }catch(err){
+    // Backend / clé PayPal pas encore configurés : mode aperçu uniquement, aucun vrai paiement.
+    container.innerHTML = `
+      <div style="border:1px dashed var(--border-soft); border-radius:10px; padding:14px; font-size:12.5px; color:var(--text-dim); margin-bottom:10px;">
+        ⚠️ Mode aperçu : le paiement réel n'est pas encore configuré (voir README.md). Ce bouton simule une commande pour prévisualiser l'interface.
+      </div>
+      <button class="btn btn-primary btn-block" id="demoPayBtn">Simuler le paiement (${money(total)})</button>
+    `;
+    document.getElementById('demoPayBtn').addEventListener('click', handleDemoPay);
+  }
+}
+
+async function handleDemoPay(){
+  const email = document.getElementById('checkoutEmail').value.trim();
+  if(!email || !email.includes('@')){ toast('Entre un email valide'); return; }
+  const btn = document.getElementById('demoPayBtn');
+  btn.disabled = true; btn.textContent = 'Paiement en cours…';
+  await new Promise(r=>setTimeout(r, 700));
+  const newOrders = CART.map(it=>({
+    product: it.name, option: it.optionLabel, key: genKey(), date: new Date().toLocaleDateString('fr-FR'),
+    productId: it.productId, expiresAt: Date.now() + (it.days||30)*24*60*60*1000
+  }));
+  ORDERS.push(...newOrders.map(o=>({ id: uid(), email, ...o })));
+  await saveOrders();
+  currentUserEmail = email;
+  showLicenseSuccess(newOrders, email);
+}
+
+function showLicenseSuccess(licenses, email){
+  const modal = document.getElementById('checkoutModal');
+  modal.innerHTML = `
+    <button class="modal-close" id="closeCheckout2">✕</button>
+    <h3>✅ Paiement confirmé</h3>
+    <p style="color:var(--text-muted); font-size:13.5px; margin:8px 0 18px;">Voici ${licenses.length>1?'tes clés de licence':'ta clé de licence'} — conserve-les précieusement. Elles restent consultables via "Mes licences" avec ${email}.</p>
+    ${licenses.map(o=>`
+      <div style="margin-bottom:18px;">
+        <div style="font-size:13px; color:var(--text-muted); margin-bottom:6px;">${o.product} — ${o.option}</div>
+        <div class="license-key">${o.key}</div>
+        ${o.expiresAt ? `<div style="font-size:11.5px; color:var(--text-dim); text-align:center; margin-top:4px;">Expire le ${new Date(o.expiresAt).toLocaleDateString('fr-FR')}</div>` : ''}
+        ${INSTRUCTIONS[o.productId] ? `
+          <div class="panel" style="margin-top:10px; font-size:12.5px; line-height:1.6;">
+            <strong>${INSTRUCTIONS[o.productId].title}</strong>
+            <ol style="margin:8px 0 0 18px; padding:0;">
+              ${INSTRUCTIONS[o.productId].steps.map(s=>`<li>${s}</li>`).join('')}
+            </ol>
+          </div>` : ''}
+      </div>`).join('')}
+    <button class="btn btn-ghost btn-block" id="doneCheckout">Terminé</button>
+  `;
+  document.getElementById('closeCheckout2').addEventListener('click', closeCheckoutFlow);
+  document.getElementById('doneCheckout').addEventListener('click', closeCheckoutFlow);
+  CART = [];
+  renderCart();
+  renderProducts();
+  toast('Commande confirmée !');
+}
+function closeCheckoutFlow(){ document.getElementById('checkoutOverlay').classList.remove('active'); }
+
+/* ---------- Login ---------- */
+document.getElementById('loginNavBtn').addEventListener('click', ()=>document.getElementById('loginOverlay').classList.add('active'));
+document.getElementById('closeLogin').addEventListener('click', ()=>document.getElementById('loginOverlay').classList.remove('active'));
+document.getElementById('loginOverlay').addEventListener('click', (e)=>{ if(e.target.id==='loginOverlay') e.currentTarget.classList.remove('active'); });
+document.getElementById('loginSubmit').addEventListener('click', ()=>{
+  const email = document.getElementById('loginEmail').value.trim();
+  if(!email || !email.includes('@')){ toast('Email invalide'); return; }
+  currentUserEmail = email;
+  document.getElementById('loginNavBtn').textContent = email.split('@')[0];
+  document.getElementById('loginOverlay').classList.remove('active');
+  toast('Connecté as ' + email);
+  document.getElementById('lookupEmail').value = email;
+});
+
+/* ---------- License lookup ---------- */
+document.getElementById('lookupBtn').addEventListener('click', async ()=>{
+  const email = document.getElementById('lookupEmail').value.trim();
+  const results = document.getElementById('lookupResults');
+  if(!email){ toast('Entre un email'); return; }
+  results.innerHTML = `<p style="text-align:center; color:var(--text-dim);">Recherche…</p>`;
+
+  let mine = [];
+  try{
+    const res = await fetch(`${CONFIG.API_BASE}/api/lookup-license?email=${encodeURIComponent(email)}`);
+    if(!res.ok) throw new Error('api-unavailable');
+    const data = await res.json();
+    mine = data.licenses || [];
+  }catch(err){
+    // Backend pas encore déployé : on retombe sur les commandes locales (mode aperçu)
+    mine = ORDERS.filter(o=>o.email.toLowerCase()===email.toLowerCase());
+  }
+
+  if(!mine.length){ results.innerHTML = `<p style="text-align:center; color:var(--text-dim);">Aucune licence trouvée pour cet email.</p>`; return; }
+  results.innerHTML = mine.map(o=>`
+    <div class="panel" style="margin-bottom:12px;">
+      <div style="display:flex; justify-content:space-between; margin-bottom:8px;"><strong>${o.product}</strong><span class="keycap">${o.option}</span></div>
+      <div class="license-key" style="font-size:15px;">${o.key}</div>
+      <div style="font-size:12px; color:var(--text-dim); text-align:center;">Achetée le ${o.date}</div>
+    </div>`).join('');
+});
+
+/* ---------- Reviews form ---------- */
+let selectedRating = 5;
+const starsWrap = document.getElementById('revStars');
+function renderStarPicker(){
+  starsWrap.innerHTML = [1,2,3,4,5].map(n=>`<button data-n="${n}" class="${n<=selectedRating?'active':''}">★</button>`).join('');
+  starsWrap.querySelectorAll('button').forEach(b=>b.addEventListener('click', ()=>{ selectedRating=+b.dataset.n; renderStarPicker(); }));
+}
+renderStarPicker();
+document.getElementById('submitReview').addEventListener('click', async ()=>{
+  const name = document.getElementById('revName').value.trim();
+  const msg = document.getElementById('revMsg').value.trim();
+  if(!name || !msg){ toast('Remplis ton prénom et ton message'); return; }
+  REVIEWS.push({id:uid(), name, message:msg, rating:selectedRating, date:new Date().toLocaleDateString('fr-FR')});
+  await saveReviews();
+  document.getElementById('revName').value=''; document.getElementById('revMsg').value=''; selectedRating=5; renderStarPicker();
+  renderReviews();
+  toast('Merci pour ton avis !');
+});
+
+/* ---------- Admin: gate switch (Propriétaire / Équipe) ---------- */
+document.querySelectorAll('[data-gate]').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    document.querySelectorAll('[data-gate]').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('gate-owner').style.display = btn.dataset.gate==='owner' ? 'block':'none';
+    document.getElementById('gate-team').style.display = btn.dataset.gate==='team' ? 'block':'none';
+  });
+});
+
+/* ---------- Admin: login ---------- */
+const ALL_PERMS_TRUE = {products:true, orders:true, reviews:true, team:true};
+document.getElementById('adminLoginBtn').addEventListener('click', ()=>{
+  const pass = document.getElementById('adminPass').value;
+  if(pass === 'galaxy-admin'){
+    enterAdminPanel(true, {name:'Propriétaire', email:''}, ALL_PERMS_TRUE);
+  } else {
+    toast('Mot de passe incorrect');
+  }
+});
+document.getElementById('teamLoginBtn').addEventListener('click', ()=>{
+  const email = document.getElementById('teamEmail').value.trim().toLowerCase();
+  const member = TEAM.find(m=>m.email.toLowerCase()===email);
+  if(!member){ toast("Aucun accès trouvé pour cet email"); return; }
+  const role = ROLES.find(r=>r.id===member.roleId);
+  if(!role){ toast("Ce membre n'a pas de rôle valide, contacte le propriétaire"); return; }
+  enterAdminPanel(false, member, role.perms);
+});
+document.getElementById('adminLogoutBtn').addEventListener('click', ()=>{
+  isAdmin = false; isOwner = false;
+  document.getElementById('adminPanel').style.display = 'none';
+  document.getElementById('adminGate').style.display = 'block';
+  document.getElementById('adminPass').value=''; document.getElementById('teamEmail').value='';
+});
+
+function enterAdminPanel(owner, who, perms){
+  isAdmin = true; isOwner = owner; currentAdminPerms = perms;
+  document.getElementById('adminGate').style.display = 'none';
+  document.getElementById('adminPanel').style.display = 'block';
+  document.getElementById('adminWhoami').textContent = owner
+    ? 'Connecté en tant que Propriétaire'
+    : `Connecté en tant que ${who.name} (${who.email})`;
+
+  const permMap = {products:'products', orders:'orders', 'reviews-mod':'reviews', team:'team'};
+  let firstVisible = null;
+  document.querySelectorAll('#adminPanel .tabs .tab-btn[data-tab]').forEach(btn=>{
+    const key = permMap[btn.dataset.tab];
+    const allowed = !!perms[key];
+    btn.style.display = allowed ? 'inline-block' : 'none';
+    if(allowed && !firstVisible) firstVisible = btn.dataset.tab;
+  });
+  document.querySelectorAll('#adminPanel .tabs .tab-btn[data-tab]').forEach(b=>b.classList.remove('active'));
+  ['products','orders','reviews-mod','team'].forEach(t=>{
+    document.getElementById('tab-'+t).style.display = (t===firstVisible) ? 'block' : 'none';
+  });
+  if(firstVisible){
+    document.querySelector(`#adminPanel .tab-btn[data-tab="${firstVisible}"]`).classList.add('active');
+  } else {
+    document.getElementById('adminWhoami').textContent += ' — aucune permission attribuée, contacte le propriétaire.';
+  }
+  renderAdminProducts();
+  renderAdminOrders();
+  renderAdminReviews();
+  renderRoles();
+  renderTeam();
+}
+
+document.querySelectorAll('#adminPanel .tabs .tab-btn[data-tab]').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    document.querySelectorAll('#adminPanel .tabs .tab-btn[data-tab]').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    ['products','orders','reviews-mod','team'].forEach(t=>{
+      document.getElementById('tab-'+t).style.display = (t===btn.dataset.tab) ? 'block' : 'none';
+    });
+  });
+});
+
+/* ---------- Roles & Team ---------- */
+const PERM_LABELS = {
+  products: 'Gérer le catalogue (bots, prix, formules)',
+  orders: 'Voir les commandes',
+  reviews: 'Modérer les avis',
+  team: "Gérer l'équipe et les rôles"
+};
+const ROLE_COLORS = ['#8b5cf6','#c026d3','#34d399','#f87171','#fbbf24','#60a5fa'];
+
+function renderRoles(){
+  const wrap = document.getElementById('rolesList');
+  if(!ROLES.length){ wrap.innerHTML = `<p style="color:var(--text-dim); margin-bottom:20px;">Aucun rôle. Crée-en un pour organiser ton équipe.</p>`; return; }
+  wrap.innerHTML = ROLES.map(r=>{
+    const activePerms = Object.keys(r.perms).filter(k=>r.perms[k]);
+    return `
+    <div class="product-row" data-rid="${r.id}">
+      <div class="product-row-head">
+        <div style="display:flex; gap:10px; align-items:center;">
+          <span style="width:12px;height:12px;border-radius:50%;background:${r.color};display:inline-block;"></span>
+          <div style="font-weight:600;">${escapeHtml(r.name)}</div>
+        </div>
+        <div style="display:flex; gap:6px;">
+          <button class="btn btn-ghost btn-sm edit-role" data-id="${r.id}">Modifier</button>
+          <button class="btn btn-danger btn-sm del-role" data-id="${r.id}">Supprimer</button>
+        </div>
+      </div>
+      <div style="display:flex; gap:6px; flex-wrap:wrap;">
+        ${activePerms.length ? activePerms.map(k=>`<span class="keycap">${PERM_LABELS[k]}</span>`).join('') : `<span style="font-size:12.5px; color:var(--text-dim);">Aucune permission</span>`}
+      </div>
+    </div>`;
+  }).join('');
+  wrap.querySelectorAll('.edit-role').forEach(b=>b.addEventListener('click', ()=>openRoleEditor(b.dataset.id)));
+  wrap.querySelectorAll('.del-role').forEach(b=>b.addEventListener('click', async ()=>{
+    if(TEAM.some(m=>m.roleId===b.dataset.id)){ toast('Réaffecte les membres de ce rôle avant de le supprimer'); return; }
+    if(!confirm('Supprimer ce rôle ?')) return;
+    ROLES = ROLES.filter(r=>r.id!==b.dataset.id);
+    await saveRoles(); renderRoles();
+    toast('Rôle supprimé');
+  }));
+}
+
+function openRoleEditor(id){
+  const r = id ? ROLES.find(x=>x.id===id) : {id:'role-'+uid(), name:'', color:ROLE_COLORS[ROLES.length % ROLE_COLORS.length], perms:{products:false,orders:false,reviews:false,team:false}};
+  const modal = document.getElementById('productModal');
+  modal.innerHTML = `
+    <button class="modal-close" id="closeRoleEditor">✕</button>
+    <h3>${id?'Modifier le rôle':'Nouveau rôle'}</h3>
+    <div class="field"><label>Nom du rôle</label><input id="roleName" value="${escapeHtml(r.name)}" placeholder="Ex : Responsable serveur"></div>
+    <div class="field">
+      <label>Couleur</label>
+      <div style="display:flex; gap:8px;" id="roleColorPicker">
+        ${ROLE_COLORS.map(c=>`<button type="button" data-color="${c}" style="width:28px;height:28px;border-radius:50%;background:${c};border:2px solid ${c===r.color?'#fff':'transparent'};"></button>`).join('')}
+      </div>
+    </div>
+    <div class="field">
+      <label>Permissions</label>
+      <div id="rolePermsList">
+        ${Object.keys(PERM_LABELS).map(k=>`
+          <label style="display:flex; align-items:center; gap:10px; padding:10px 0; border-bottom:1px solid var(--border-soft); font-size:13.5px; cursor:pointer;">
+            <input type="checkbox" data-perm="${k}" ${r.perms[k]?'checked':''} style="accent-color:var(--accent); width:16px; height:16px;">
+            ${PERM_LABELS[k]}
+          </label>`).join('')}
+      </div>
+    </div>
+    <button class="btn btn-primary btn-block" id="saveRoleBtn" style="margin-top:10px;">Enregistrer le rôle</button>
+  `;
+  let chosenColor = r.color;
+  modal.querySelectorAll('#roleColorPicker button').forEach(b=>b.addEventListener('click', ()=>{
+    chosenColor = b.dataset.color;
+    modal.querySelectorAll('#roleColorPicker button').forEach(x=>x.style.border='2px solid transparent');
+    b.style.border = '2px solid #fff';
+  }));
+  document.getElementById('closeRoleEditor').addEventListener('click', ()=>document.getElementById('productOverlay').classList.remove('active'));
+  document.getElementById('saveRoleBtn').addEventListener('click', async ()=>{
+    const name = document.getElementById('roleName').value.trim();
+    if(!name){ toast('Donne un nom au rôle'); return; }
+    const perms = {};
+    modal.querySelectorAll('[data-perm]').forEach(cb=>{ perms[cb.dataset.perm] = cb.checked; });
+    const updated = {id:r.id, name, color:chosenColor, perms};
+    if(id){ ROLES = ROLES.map(x=>x.id===id?updated:x); } else { ROLES.push(updated); }
+    await saveRoles();
+    renderRoles();
+    document.getElementById('productOverlay').classList.remove('active');
+    toast('Rôle enregistré');
+  });
+  document.getElementById('productOverlay').classList.add('active');
+}
+document.getElementById('addRoleBtn').addEventListener('click', ()=>openRoleEditor(null));
+
+function renderTeam(){
+  const body = document.getElementById('teamTableBody');
+  if(!TEAM.length){ body.innerHTML = `<tr><td colspan="4" style="text-align:center; color:var(--text-dim);">Aucun membre pour le moment.</td></tr>`; return; }
+  body.innerHTML = TEAM.map(m=>{
+    const role = ROLES.find(r=>r.id===m.roleId);
+    return `<tr>
+      <td>${escapeHtml(m.name)}</td>
+      <td>${escapeHtml(m.email)}</td>
+      <td>${role ? `<span class="keycap" style="border-color:${role.color}55; color:${role.color};">${escapeHtml(role.name)}</span>` : '<span style="color:var(--text-dim)">rôle supprimé</span>'}</td>
+      <td><button class="btn btn-danger btn-sm del-member" data-id="${m.id}">Retirer</button></td>
+    </tr>`;
+  }).join('');
+  body.querySelectorAll('.del-member').forEach(b=>b.addEventListener('click', async ()=>{
+    if(!confirm("Retirer ce membre de l'équipe ?")) return;
+    TEAM = TEAM.filter(m=>m.id!==b.dataset.id);
+    await saveTeam(); renderTeam();
+    toast('Membre retiré');
+  }));
+}
+
+function openMemberEditor(){
+  if(!ROLES.length){ toast("Crée d'abord un rôle avant d'ajouter un membre"); return; }
+  const modal = document.getElementById('productModal');
+  modal.innerHTML = `
+    <button class="modal-close" id="closeMemberEditor">✕</button>
+    <h3>Ajouter un membre</h3>
+    <div class="field"><label>Nom</label><input id="memberName" placeholder="Ex : Sam"></div>
+    <div class="field"><label>Email</label><input id="memberEmail" type="email" placeholder="sam@exemple.com"></div>
+    <div class="field">
+      <label>Rôle</label>
+      <select id="memberRole">${ROLES.map(r=>`<option value="${r.id}">${escapeHtml(r.name)}</option>`).join('')}</select>
+    </div>
+    <button class="btn btn-primary btn-block" id="saveMemberBtn">Ajouter à l'équipe</button>
+  `;
+  document.getElementById('closeMemberEditor').addEventListener('click', ()=>document.getElementById('productOverlay').classList.remove('active'));
+  document.getElementById('saveMemberBtn').addEventListener('click', async ()=>{
+    const name = document.getElementById('memberName').value.trim();
+    const email = document.getElementById('memberEmail').value.trim();
+    const roleId = document.getElementById('memberRole').value;
+    if(!name || !email || !email.includes('@')){ toast('Renseigne un nom et un email valide'); return; }
+    if(TEAM.some(m=>m.email.toLowerCase()===email.toLowerCase())){ toast("Cet email fait déjà partie de l'équipe"); return; }
+    TEAM.push({id:uid(), name, email, roleId});
+    await saveTeam();
+    renderTeam();
+    document.getElementById('productOverlay').classList.remove('active');
+    toast('Membre ajouté');
+  });
+  document.getElementById('productOverlay').classList.add('active');
+}
+document.getElementById('addMemberBtn').addEventListener('click', openMemberEditor);
+
+function renderAdminProducts(){
+  const wrap = document.getElementById('adminProductList');
+  wrap.innerHTML = PRODUCTS.map(p=>`
+    <div class="product-row" data-pid="${p.id}">
+      <div class="product-row-head">
+        <div style="display:flex; gap:10px; align-items:center;">
+          <span style="font-size:20px;">${p.icon}</span>
+          <div>
+            <div style="font-weight:600;">${p.name}</div>
+            <div style="font-size:12px; color:var(--text-dim);">${p.category}</div>
+          </div>
+        </div>
+        <div style="display:flex; gap:6px;">
+          <button class="btn btn-ghost btn-sm edit-p" data-id="${p.id}">Modifier</button>
+          <button class="btn btn-danger btn-sm del-p" data-id="${p.id}">Supprimer</button>
+        </div>
+      </div>
+      <div style="font-size:13px; color:var(--text-muted);">${p.desc}</div>
+      <div style="margin-top:10px; display:flex; gap:6px; flex-wrap:wrap;">
+        ${p.options.map(o=>`<span class="keycap">${o.label} · ${money(o.price)}</span>`).join('')}
+      </div>
+    </div>`).join('') || `<p style="color:var(--text-dim);">Aucun produit. Clique sur "Ajouter un bot".</p>`;
+  wrap.querySelectorAll('.edit-p').forEach(b=>b.addEventListener('click', ()=>openProductEditor(b.dataset.id)));
+  wrap.querySelectorAll('.del-p').forEach(b=>b.addEventListener('click', async ()=>{
+    if(!confirm('Supprimer ce bot du catalogue ?')) return;
+    PRODUCTS = PRODUCTS.filter(p=>p.id!==b.dataset.id);
+    await saveProducts(); renderAdminProducts(); renderProducts();
+    toast('Produit supprimé');
+  }));
+}
+document.getElementById('addProductBtn').addEventListener('click', ()=>openProductEditor(null));
+
+function openProductEditor(id){
+  editingProductId = id;
+  const p = id ? PRODUCTS.find(x=>x.id===id) : {id:'p-'+uid(), name:'', icon:'🤖', category:'', desc:'', options:[{id:uid(), label:'1 mois', price:2}]};
+  const modal = document.getElementById('productModal');
+  modal.innerHTML = `
+    <button class="modal-close" id="closeEditor">✕</button>
+    <h3>${id?'Modifier le bot':'Nouveau bot'}</h3>
+    <div class="field"><label>Nom</label><input id="edName" value="${p.name}"></div>
+    <div class="admin-grid">
+      <div class="field"><label>Icône (emoji)</label><input id="edIcon" value="${p.icon}"></div>
+      <div class="field"><label>Catégorie</label><input id="edCat" value="${p.category}"></div>
+    </div>
+    <div class="field"><label>Description</label><textarea id="edDesc">${p.desc}</textarea></div>
+    <label style="display:block; font-size:13px; font-weight:600; color:var(--text-muted); margin-bottom:8px;">Formules (durée / prix)</label>
+    <div id="edOptions"></div>
+    <button class="btn btn-ghost btn-sm" id="addOptionBtn" style="margin-bottom:16px;">+ Ajouter une formule</button>
+    <button class="btn btn-primary btn-block" id="saveProductBtn">Enregistrer</button>
+  `;
+  let opts = JSON.parse(JSON.stringify(p.options));
+  function renderOpts(){
+    document.getElementById('edOptions').innerHTML = opts.map((o,i)=>`
+      <div class="opt-row">
+        <input data-i="${i}" data-f="label" value="${o.label}" placeholder="Durée (ex: 1 mois)">
+        <input data-i="${i}" data-f="price" type="number" step="0.01" value="${o.price}" placeholder="Prix">
+        <span></span>
+        <button class="icon-btn" style="width:32px;height:32px;" data-rm="${i}">✕</button>
+      </div>`).join('');
+    document.querySelectorAll('#edOptions input').forEach(inp=>inp.addEventListener('input', ()=>{
+      const i = +inp.dataset.i, f = inp.dataset.f;
+      opts[i][f] = f==='price' ? parseFloat(inp.value||0) : inp.value;
+    }));
+    document.querySelectorAll('#edOptions [data-rm]').forEach(b=>b.addEventListener('click', ()=>{
+      opts.splice(+b.dataset.rm,1); renderOpts();
+    }));
+  }
+  renderOpts();
+  document.getElementById('addOptionBtn').addEventListener('click', ()=>{
+    opts.push({id:uid(), label:'', price:0}); renderOpts();
+  });
+  document.getElementById('closeEditor').addEventListener('click', ()=>document.getElementById('productOverlay').classList.remove('active'));
+  document.getElementById('saveProductBtn').addEventListener('click', async ()=>{
+    const name = document.getElementById('edName').value.trim();
+    if(!name){ toast('Donne un nom au bot'); return; }
+    const updated = {
+      id: p.id, name, icon: document.getElementById('edIcon').value || '🤖',
+      category: document.getElementById('edCat').value || 'Bot',
+      desc: document.getElementById('edDesc').value,
+      options: opts.filter(o=>o.label && o.price>=0)
+    };
+    if(id){
+      PRODUCTS = PRODUCTS.map(x=>x.id===id?updated:x);
+    } else {
+      PRODUCTS.push(updated);
+    }
+    await saveProducts();
+    renderAdminProducts(); renderProducts();
+    document.getElementById('productOverlay').classList.remove('active');
+    toast('Produit enregistré');
+  });
+  document.getElementById('productOverlay').classList.add('active');
+}
+
+function renderAdminOrders(){
+  const body = document.getElementById('ordersTableBody');
+  if(!ORDERS.length){ body.innerHTML = `<tr><td colspan="5" style="text-align:center; color:var(--text-dim);">Aucune commande pour le moment.</td></tr>`; return; }
+  body.innerHTML = ORDERS.slice().reverse().map(o=>`
+    <tr>
+      <td>${o.date}</td>
+      <td>${escapeHtml(o.email)}</td>
+      <td>${o.product} <span style="color:var(--text-dim)">(${o.option})</span></td>
+      <td><span class="badge">${o.key}</span></td>
+      <td>${money(o.price)}</td>
+    </tr>`).join('');
+}
+
+function renderAdminReviews(){
+  const wrap = document.getElementById('adminReviewsList');
+  if(!REVIEWS.length){ wrap.innerHTML = `<p style="color:var(--text-dim);">Aucun avis pour le moment.</p>`; return; }
+  wrap.innerHTML = REVIEWS.slice().reverse().map(r=>`
+    <div class="review-card" style="margin-bottom:10px; display:flex; justify-content:space-between; align-items:center; gap:12px;">
+      <div>
+        <div class="review-top" style="margin-bottom:4px;"><span class="review-name">${escapeHtml(r.name)}</span><span class="stars">${'★'.repeat(r.rating)}</span></div>
+        <div class="review-msg">${escapeHtml(r.message)}</div>
+      </div>
+      <button class="btn btn-danger btn-sm" data-delrev="${r.id}">Supprimer</button>
+    </div>`).join('');
+  wrap.querySelectorAll('[data-delrev]').forEach(b=>b.addEventListener('click', async ()=>{
+    REVIEWS = REVIEWS.filter(r=>r.id!==b.dataset.delrev);
+    await saveReviews();
+    renderAdminReviews(); renderReviews();
+    toast('Avis supprimé');
+  }));
+}
+
+/* ---------- Init ---------- */
+loadAll();
+</script>
+</body>
+</html>
