@@ -688,7 +688,7 @@ function renderProducts(){
   document.getElementById('homeProductGrid').innerHTML = PRODUCTS.slice(0,4).map(p=>productCard(p)).join('') || emptyState('Aucun bot pour le moment.');
   document.getElementById('fullProductGrid').innerHTML = html || emptyState('Aucun bot configuré. Ajoute-en depuis le panel admin.');
   document.querySelectorAll('.open-product').forEach(b=>b.addEventListener('click', ()=>openProductModal(b.dataset.id)));
-  document.getElementById('statLicenses').textContent = (1000 + ORDERS.length).toLocaleString('fr-FR');
+  document.getElementById('statLicenses').textContent = (0 + ORDERS.length).toLocaleString('fr-FR');
 }
 function emptyState(msg){ return `<p style="color:var(--text-dim); text-align:center; padding:40px 0; grid-column:1/-1;">${msg}</p>`; }
 
